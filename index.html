@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <title>pc端调试钉钉</title>
+</head>
+<style>
+      body{
+            background: rgba(0,0,0,0.1);
+            font-size: 14px;
+            line-height: 30px;
+      }
+      img{
+            min-width: 400px;
+            width: 30%;
+            display: block;
+            margin: 10px;
+      }
+      a{
+            color:blue
+      }
+      .w{
+            width: 70%;
+      }
+</style>
+<body>
+      <h3>
+            1.vconsole（NetWork目前官方不支持，记得以前是支持的，只能手动打印请求和结果）</br>
+      </h3>
+      <div>
+            import VConsole from "vconsole";</br>
+            const vconsole = new VConsole();</br>
+            console.log('vconsle启动...',vconsole)</br>
+      </div></br></br>
+      <h3>
+            2.利用 chrome://inspect/#devices</br>
+      </h3>
+      <div>
+            1.利用USB将电脑和手机连接起来</br>
+      </div>
+      <div>
+            2.手机调试为开发者模式</br>
+            ex:(小米手机为例,别的型号手机者自行百度)</br>
+            （1）手机设置-更多参数信息-MUUI版本系统连续点击四次会打开手机开发模式（点击时手机会有相应的微提示）</br>
+            <img src="./css/1.jpeg" alt="">
+            <img src="./css/2.jpeg" alt="">
+            <img src="./css/3.jpeg" alt="">
+            <img src="./css/4.jpeg" alt="">
+      </div>
+      <div>
+            3.钉钉应用（需要使用钉钉开发版 链接: <a>https://pan.baidu.com/s/1lRgTxh1Fy055kdj5HkY62g</a> 提取码: tmhh ）</br>
+            注：装应用之前需要卸载稳定版钉钉，不然钉钉开发版本装不上去</br>
+            （1)打开钉钉： 我的-设置-通用-打开开发者模式</br>
+            <img src="./css/5.jpeg" alt="">
+            <img src="./css/6.jpeg" alt="">
+            <img src="./css/7.jpeg" alt="">
+            <img src="./css/8.jpeg" alt="">
+      </div>
+      <div>
+            4. 利用pc端Google打开网页 <a>chrome://inspect/#devices</a> </br>
+            （1）DevTools-devices(默认) ，如果手机连接成功，打开的页面的 Remote Target 里面会显示当前型号</br>
+            （2）手机端所打开的应用会在手机型号下面显示，inspect pause两个按钮，点击inspect打开调试DevTool工具</br>
+            注：有的时候会报HTTP404，因为第一次点开需要vpn翻墙，以后就不需要了~</br>
+            注：目前使用的翻墙工具,基本每次都会有免费试用（蓝灯 链接:<a>https://pan.baidu.com/s/1A9mNh_PKBsDmclF63752sQ</a> 密码:lrb7 ）</br>
+            <img class="w" src="./css/9.jpeg" alt="">
+            <img class="w" src="./css/10.jpeg" alt="">
+            <img class="w" src="./css/11.jpeg" alt="">
+      </div>
+      然后就可以愉快的使用廖~~~
+
+</body>
+
+</html>
